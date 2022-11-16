@@ -1,0 +1,94 @@
+.input-text-container-form-group {
+  /* Frame 980 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+
+  width: 508px;
+  height: 598px;
+  left: 466px;
+  top: 213px;
+}
+
+.input-text-container {
+  /* Frame 978 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 508px;
+  height: 61px;
+}
+
+.input-text {
+  border: none;
+  outline: none;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+  /* Frame 515 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 11px 16px;
+  gap: 10px;
+
+  width: 508px;
+  height: 40px;
+
+  background: #fff4e9;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.input-text-label {
+  /* Label */
+
+  padding: 0px 16px;
+
+  width: 476px;
+  height: 13px;
+
+  /* Captions/Captions Bold */
+
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  /* or 13px */
+
+  letter-spacing: 0.008em;
+
+  /* Light/Text Color/Title */
+
+  color: #11142d;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
