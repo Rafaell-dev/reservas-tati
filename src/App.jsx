@@ -1,11 +1,10 @@
 import React from 'react'
+import Form from './components/form'
 
-const App =() => {
+const App = () => {
   return (
     <>
-    <div className="container d-flex justify-content-center">
-      <h1>Hello World</h1>
-    </div>
+      <Form />
     </>
   )
 }
