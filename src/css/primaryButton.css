@@ -1,0 +1,48 @@
+.primary-button {
+  /* Group 19 */
+
+  width: 256px;
+  height: 52px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 6;
+  flex-grow: 0;
+  
+}
+
+.primary-button-text {
+  /* Fazer reserva */
+
+  width: 130px;
+  height: 23px;
+  left: 189px;
+  top: 561px;
+
+  font-family: 'Arimo';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.primary-button-container {
+  /* Rectangle 1 */
+  border: none;
+  outline: none;
+
+  width: 256px;
+  height: 52px;
+  left: 126px;
+  top: 546px;
+
+  background: #f77f00;
+  border-radius: 8px;
+}
+.primary-button:active {
+  background: #ee800a;
+  transform: translateY(2px)
+}
