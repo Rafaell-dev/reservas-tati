@@ -1,3 +1,4 @@
+import PrimaryButton from './button'
 import React from 'react'
 import InputText from './inputText'
 
@@ -11,6 +12,7 @@ const Form = () => {
         <InputText label={'Quantidade de Pessoas'} type={'number'} />
         <InputText label={'Data'} type={'date'} />
         <InputText label={'Hórario'} type={'time'} />
+        <PrimaryButton text={'Fazer Reserva'}/>
       </div>
     </>
   )
