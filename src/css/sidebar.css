@@ -1,0 +1,41 @@
+
+.sidebar-container {
+  /* Sidebar */
+
+  position: absolute;
+  width: 100px;
+  height: 100%;
+}
+.sidebar-icon-container {
+  /* Icon button container*/
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 11px;
+  top: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-icon {
+  /* Icon button */
+  background-color: #F77F00;
+  width: 50.42px;
+  height: 47.85px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.sidebar-icon-container:active {
+  /* Active Container */
+
+  position: absolute;
+  width: 50.42px;
+  height: 47.85px;
+  left: 26px;
+  top: 42px;
+  border-radius: 8px;
+}

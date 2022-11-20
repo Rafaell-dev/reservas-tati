@@ -1,0 +1,101 @@
+* {
+  font-family: 'Mulish';
+  font-style: normal;
+  color: #11142d;
+}
+
+.navbar-dashboard {
+  /* Navbar */
+
+  width: 100%;
+  height: 60px;
+}
+.navbar-dashboard-logo-container {
+  /* Logo */
+
+  width: 289px;
+  height: 40px;
+}
+
+.navbar-dashboard-logo {
+  /* Logo Placeholder */
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 32px;
+
+  /* Light/Fills Color/Image Placeholder */
+
+  background: #e2e2ea;
+  border-radius: 8px;
+}
+
+.navbar-dashboard-text-logo {
+  /* Sistema de Reservas */
+
+  position: absolute;
+  width: 241px;
+  height: 29px;
+  left: 80px;
+
+  /* Heading/H5 Bold */
+  font-weight: 700;
+  font-size: 18px;
+  /* identical to box height, or 29px */
+
+  letter-spacing: 0.005em;
+}
+.navbar-divider {
+  /* Divider */
+
+  position: absolute;
+  width: 100%;
+
+  /* Light/Separators Colors/Secondary */
+
+  border: 1px solid #e1e1e1;
+}
+.navbar-profile-container {
+  /* Profile */
+
+  width: 181px;
+  height: 41.06px;
+}
+.navbar-profile-logo {
+  /* Container */
+
+  width: 40px;
+  height: 41.06px;
+
+  background: #c4c4c4;
+  border-radius: 20px;
+}
+.navbar-profile-user {
+  /* User */
+
+  /* Captions/Captions Regular */
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  /* or 14px */
+
+  letter-spacing: 0.008em;
+
+  /* Light/Text Color/Body 2 */
+
+  color: #9a9ab0;
+}
+
+.navbar-profile-title {
+  /* Restaurante */
+
+  /* Title/Title 2 Bold */
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+
+  letter-spacing: 0.005em;
+}
