@@ -1,0 +1,76 @@
+.panel-title {
+  /* Customer */
+
+  position: absolute;
+  width: 244px;
+  height: 29px;
+  left: 123px;
+  top: 94px;
+
+  /* Heading/H5 Bold */
+
+  font-family: 'Mulish';
+  font-style: bold;
+
+  font-size: 16px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+
+  letter-spacing: 0.005em;
+
+  /* Light/Text Color/Title */
+
+  color: #11142d;
+}
+.panel-config-container {
+  /* Coupon Tabel */
+
+  position: absolute;
+  width: 80%;
+  height: 5%;
+  left: 123px;
+  top: 134px;
+  background: #fff4e9;
+}
+.panel-header-text-container {
+  /* Table-Header */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 16px 20px 22px;
+
+  width: 10%;
+  height: 5%;
+}
+.panel-header-text {
+  /* row header normal */
+
+  width: 162px;
+  height: 19px;
+
+  /* Headlines/Headline Bold Normal */
+
+  font-family: 'Mulish';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 120%;
+  /* or 19px */
+
+  letter-spacing: 0.005em;
+
+  /* Light/Text Color/Title */
+
+  color: #11142d;
+
+  opacity: 0.8;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
