@@ -1,10 +1,10 @@
 import React from 'react'
-import DashboardConfig from './components/dashboard/dashboardConfig'
+import Form from './components/form'
 
 const App = () => {
   return (
     <>
-      <DashboardConfig />
+      <Form/>
     </>
   )
 }
