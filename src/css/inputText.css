@@ -68,9 +68,6 @@
 
   padding: 0px 16px;
 
-  width: 476px;
-  height: 13px;
-
   /* Captions/Captions Bold */
 
   font-family: 'Mulish';
@@ -91,4 +88,13 @@
   flex: none;
   order: 0;
   flex-grow: 1;
+}
+.container-label{
+  display: inline;
+  align-items: flex-end;
+}
+.field-error{
+  color: red;
+  font-size: smaller;
+
 }
