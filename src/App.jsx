@@ -1,17 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import DashboardConfig from './components/dashboard/dashboardConfig'
-import DashboardReservations from './components/dashboard/dashboardReservations'
-import Navbar from './components/dashboard/navbar'
-import Sidebar from './components/dashboard/sidebar'
+import React from 'react'
+import Form from './components/form'
+import Reservation from './components/reservationDone'
+
 const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
-        <Sidebar />
         <Routes>
-          <Route path='/' element={<DashboardConfig/>}/>
-          <Route path='/reservas' element={<DashboardReservations/>}/>
+          <Route exact path="/" element={<Form />}/>
+          <Route path='/Reservation' element={<Reservation/>}/>
         </Routes>
       </Router>
     </>

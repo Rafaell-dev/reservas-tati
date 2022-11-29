@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import PrimaryButton from './button'
 import React from 'react'
 import InputText from './inputText'
@@ -8,14 +9,14 @@ const Form = () => {
   return (
     <>
       <Formik
-        initialValues={{ email: '', celular: '', quantPessoas: '1' }}
+        initialValues={{ nome: '', email: '', celular: '', quantPessoas: '1' }}
         validate={values => {
           const errors = {}
 
           // Validação Nome
           if (!values.nome) {
             errors.nome = '*Preencha este campo'
-          } else if (!/^[A-Z]+[ ]+[A-Z]$/i.test(values.nome)) {
+          } else if (!/^[A-Z]+[ ]+[A-Z]/i.test(values.nome)) {
             errors.nome = '*Preencha nome e sobrenome'
           } else if (values.nome.length < 5) {
             errors.nome = '*Nome menor que 3 caracteres'
@@ -60,14 +61,12 @@ const Form = () => {
           handleChange,
           handleBlur,
           handleSubmit,
-          isSubmitting
+          isSubmitting,
+          isValid
+
           /* and other goodies */
         }) => (
-          <form
-            onSubmit={handleSubmit}
-            className="container d-flex justify-content-center align-items-center vh-100 input-text-container-form-group"
-            action="./reservationDone.jsx"
-          >
+          <form className="container d-flex justify-content-center align-items-center vh-100 input-text-container-form-group">
             <InputText
               id={'nome'}
               name={'nome'}
@@ -139,10 +138,9 @@ const Form = () => {
               label={'Hórario'}
               type={'time'}
             />
-            <PrimaryButton
-              text={'Fazer Reserva'}
-              onSubmit="./reservationDone.jsx"
-            />
+            <PrimaryButton text={'Fazer Reserva'}>
+              <Link to={!errors ? '/Reservation' : '/'} />
+            </PrimaryButton>
           </form>
         )}
       </Formik>
