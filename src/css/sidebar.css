@@ -13,9 +13,11 @@
   height: 80px;
   left: 11px;
   top: 26px;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 1em;
 }
 
 .sidebar-icon {
@@ -29,13 +31,4 @@
   align-items: center;
   border-radius: 8px;
 }
-.sidebar-icon-container:active {
-  /* Active Container */
 
-  position: absolute;
-  width: 50.42px;
-  height: 47.85px;
-  left: 26px;
-  top: 42px;
-  border-radius: 8px;
-}

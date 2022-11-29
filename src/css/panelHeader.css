@@ -3,7 +3,6 @@
 
   position: absolute;
   width: 244px;
-  height: 29px;
   left: 123px;
   top: 94px;
 
@@ -25,11 +24,11 @@
 .panel-config-container {
   /* Coupon Tabel */
 
-  position: absolute;
+  position: relative;
   width: 80%;
   height: 5%;
   left: 123px;
-  top: 134px;
+  top: 89px;
   background: #fff4e9;
 }
 .panel-header-text-container {
