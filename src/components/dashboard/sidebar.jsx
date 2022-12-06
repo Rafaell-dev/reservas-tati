@@ -8,12 +8,12 @@ const Sidebar = () => {
     <>
       <div className="sidebar-container">
         <div className="sidebar-icon-container">
-          <Link to="/">
+          <Link to="/Dashboard/DashboardConfig">
             <div className="sidebar-icon">
               <img src={configSvg} alt="Configurações" />
             </div>
           </Link>
-          <Link to='/reservas'>
+          <Link to='/Dashboard/DashboardReservas'>
             <div className="sidebar-icon">
               <img src={ReservationSvg} alt="Reservas" />
             </div>

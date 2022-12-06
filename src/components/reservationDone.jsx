@@ -2,6 +2,8 @@ import React from 'react'
 import img from '../imgs/reservaConcluida.svg'
 import imgTooltip from '../imgs/Tooltips-Card.svg'
 import '../css/reservation.css'
+import PrimaryButton from './button'
+import { Link } from 'react-router-dom'
 const ReservationDone = () => {
   return (
     <>
@@ -13,6 +15,9 @@ const ReservationDone = () => {
           <img src={imgTooltip} alt="" />
         </div>
       </div>
+      <Link className='img-svg'  to={'/Dashboard/DashboardConfig'}>
+        <PrimaryButton text='Dashboard' />
+      </Link>
     </>
   )
 }

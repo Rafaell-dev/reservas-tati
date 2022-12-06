@@ -7,7 +7,6 @@ const PrimaryButton = props => {
       <button
         className="primary-button  primary-button-text primary-button-container"
         type="submit"
-        disabled={props.disabled}
       >
         {props.text}
       </button>

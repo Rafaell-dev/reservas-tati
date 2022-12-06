@@ -3,13 +3,13 @@ import '../../css/switchButton.css'
 const ButtonSwitch = () => {
   return (
     <>
-      <div class="switch__container">
+      <div className="switch__container">
         <input
           id="switch-shadow"
-          class="switch switch--shadow"
+          className="switch switch--shadow"
           type="checkbox"
         />
-        <label for="switch-shadow"></label>
+        <label htmlFor="switch-shadow"></label>
       </div>
     </>
   )

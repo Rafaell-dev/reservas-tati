@@ -17,10 +17,10 @@ const PanelLine = props => {
           <div className="panel-line-text">{props.h4}</div>
         </div>
         <div className="panel-line-text-container">
-          <div className="panel-line-text">{props.h5}</div>
+          <div className="panel-line-text ">{props.h5}{'\n'}{props.h6}</div>
         </div>
         <div className="panel-line-text-container">
-          <div className="panel-line-text">{props.h6}</div>
+          <div className="panel-line-text">{props.h7}</div>
         </div>
         <div className="divider"></div>
       </div>

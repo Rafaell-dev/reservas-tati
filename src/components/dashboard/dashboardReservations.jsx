@@ -1,14 +1,41 @@
-import React from 'react'
-import ButtonSwitch from './buttonSwitch'
+import React, { useEffect, useState } from 'react'
 import PanelHeader from './panelHeader'
 import PanelLine from './panelLine'
+import {v4} from 'uuid'
 const DashboardReservations = () => {
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem('reservas') || [])
+
+    if (data) {
+      setData(data)
+    }
+  }, [])
   return (
     <>
-      <PanelHeader p1={'Reservas'} h1={'ID'} h2={'Nome'} h3={'Data'} h4={'Horário'} h5={'Dados de contato'} h6={'Pessoas'} />
-      <PanelLine h1={'XXX1'} h2={'Jhon Doe'} h3={'14 Dezembro 2022'} h4={'14:00'} h5={'Celular: (87) 9 8134-6936 Email: jhondoe@gmail.com'} h6={'2'} />
-      <PanelLine h1={'XXX1'} h2={'Jhon Doe'} h3={'14 Dezembro 2022'} h4={'14:00'} h5={'Celular: (87) 9 8134-6936 Email: jhondoe@gmail.com'} h6={'2'} />
-      <PanelLine h1={'XXX1'} h2={'Jhon Doe'} h3={'14 Dezembro 2022'} h4={'14:00'} h5={'Celular: (87) 9 8134-6936 Email: jhondoe@gmail.com'} h6={'2'} />
+      <PanelHeader
+        p1={'Reservas'}
+        h1={'ID'}
+        h2={'Nome'}
+        h3={'Data'}
+        h4={'Horário'}
+        h5={'Dados de contato'}
+        h6={'Pessoas'}
+      />
+
+      {data.map(data => (
+        <PanelLine
+          key={v4()}
+          h1={data.id}
+          h2={data.nome}
+          h3={data.data}
+          h4={data.horario}
+          h5={data.email}
+          h6={data.celular}
+          h7={data.quantPessoas}
+        />
+      ))}
     </>
   )
 }
